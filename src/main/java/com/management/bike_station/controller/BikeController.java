@@ -35,5 +35,4 @@ public class BikeController {
         return repository.findById(bike.getId()).map(response-> ResponseEntity.status(HttpStatus.OK).body(repository.save(bike))).orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 
-
 }
