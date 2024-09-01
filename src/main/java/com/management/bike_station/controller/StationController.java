@@ -4,6 +4,7 @@ import com.management.bike_station.entity.Bike;
 import com.management.bike_station.entity.Station;
 import com.management.bike_station.repository.StationRepository;
 import com.management.bike_station.service.StationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,10 @@ import java.util.UUID;
 @RequestMapping("/stations")
 public class StationController {
 
+    @Autowired
     private StationService stationService;
+
+    @Autowired
     private StationRepository repository;
 
     @GetMapping("/{id}/bikes")
