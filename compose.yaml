@@ -8,9 +8,9 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 
-version: '3.8'
 services:
   server:
+    container_name: bike-station
     build:
       context: .
     ports:

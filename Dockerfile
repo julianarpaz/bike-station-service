@@ -94,4 +94,4 @@ EXPOSE 8081
 #                             "-Dspring.datasource.password=rootpassword", \
 #                             "-jar", "/app.jar"]
 
-ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher", "-Dspring.datasource.url=jdbc:mysql://mysql-host:3307/bike-station", "-Dspring.datasource.username=root", "-Dspring.datasource.password=root"]
+ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher", "-Dspring.datasource.url=jdbc:mysql://mysql-host:3306/bike-station", "-Dspring.datasource.username=root", "-Dspring.datasource.password=root"]
