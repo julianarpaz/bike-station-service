@@ -11,6 +11,7 @@ import java.util.UUID;
 @Service
 public class StationService {
 
+    @Autowired
     private final BikeRepository bikeRepository;
 
     @Autowired
